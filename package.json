@@ -1,6 +1,6 @@
 {
-  "name": "my-component",
-  "version": "0.0.1",
+  "name": "quark-timer",
+  "version": "0.0.2",
   "keywords": [
     "frontend",
     "quark",
@@ -8,10 +8,14 @@
   ],
   "scripts": {
     "dev": "npm run start",
-    "start": "vite",
-    "build": "rimraf lib && vite build --config vite.config.build.ts",
-    "prepublishOnly": "npm run build"
+    "start": "vite --host",
+    "build": "rimraf lib && vite build --config vite.config.build.ts"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yuhaiyang1/quarkc-time.git"
+  },
+  "homepage": "https://unpkg.com/quark-timer/demo.html",
   "type": "module",
   "main": "./lib/index.js",
   "module": "./lib/index.js",

@@ -3,11 +3,11 @@ import style from "./index.less?inline";
 
 declare global {
   interface HTMLElementTagNameMap {
-    "quarkc-time": MyComponent;
+    "quark-timer": MyComponent;
   }
 }
 
-@customElement({ tag: "quarkc-time", style })
+@customElement({ tag: "quark-timer", style })
 class MyComponent extends QuarkElement {
   TRANSITION: string = '100ms linear';
   NUMBER_TRANSLATION: string[] = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
